@@ -33,3 +33,13 @@ are comfortable with - CLI, using unit tests or even simply run the code via a m
 * Functional Completeness including good modelling.
 * User Identification but not authentication.
 * Backend Database is optional. However modelling should be complete.
+
+
+
+
+#### Approach 
+
+* Write clean, modular, extensible and maintainable code.
+* Follow OOPs.
+* Write code keeping SOLID principles in mind.
+* Try to see if you can use any Design Pattern specific to the problem statement.
