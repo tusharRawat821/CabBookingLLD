@@ -2,10 +2,13 @@ package com.lld.cabbooking.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
 @AllArgsConstructor
+@ToString
 public class Location {
+	
 	private Double x;
 	private Double y;
 	

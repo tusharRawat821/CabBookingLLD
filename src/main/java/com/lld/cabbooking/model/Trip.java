@@ -10,7 +10,6 @@ import lombok.ToString;
 @ToString
 public class Trip {
 	
-	private String id;
 	private Rider rider;
 	private Cab cab;
 	private Location origin;
@@ -20,22 +19,20 @@ public class Trip {
 	
 	private TripStatus status;
 	
-	public Trip(Rider rider, Cab cab, Location origin, Location dest, Double fare) {
+	public Trip(final Rider rider, final Cab cab, final Location origin, final Location dest, final Double fare) {
 		this.rider = rider;
 		this.cab = cab;
 		this.origin = origin;
 		this.dest = dest;
 		this.fare = fare;
 		
-		this.id =  UUID.randomUUID().toString();
 		this.date = LocalDate.now();
 		this.status = TripStatus.ACTIVE; 
 	}
 	
 	public void endTrip() {
 		this.status = TripStatus.COMPLETED;
-		System.out.println("Trip(id =" + id + ") " + 
-						   "ends.");
+		System.out.println(this + " ends.");
 	}
 
 }

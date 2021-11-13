@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Getter
+@ToString
 public class Cab {
 	
 	private String id;
